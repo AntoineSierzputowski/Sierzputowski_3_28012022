@@ -1,0 +1,10 @@
+@media screen and (min-width: 200px) and (max-width: 767px)
+{ 
+    h1 {
+        color: red;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+
+ }
