@@ -1,10 +1,164 @@
 @media screen and (min-width: 200px) and (max-width: 767px)
 { 
-    h1 {
-        color: red;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   /* decaler en mobile */
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+  box-shadow: 20px 20px 10px -15px #111;    
+}
 
-    }
+.localisation-top {
+    background-color: rgb(231, 231, 231);
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(20, 20, 20);
+    display: flex;
+}
+.localisation-top i {
+    margin-left: 20%;
+}
+.localisation-top p {
+    margin-left: 5%;
+}
+.accueil-reserve {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+}
+.accueil-reserve div {
+padding: 60px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+h2 {
+font-size: 30px;
+text-align: center;
+color: black;
+}
+.accueil-reserve p {
+    font-size: 20px;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 50px;
+font-weight: 200;
+}
+.accueil-reserve button {
+    padding: 22px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    width: 80%;
+    margin-left: 10%;
+}
+.accueil-fonctionnement h2 {
+    padding-top:70px;
+    padding-bottom:70px;
+    display: flex;
+    justify-content: start;
+}
+.accueil-fonctionnement{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+} 
+.accueil-fonctionnement div {
+    display: flex;
+    flex-direction: column;
+}
+
+.accueil-fonctionnement button {
+    margin-bottom: 30px;
+    text-align: left;
+    height: 80px;
+    border-radius: 45px;
+    border: none;
+	box-shadow: 0px 0px 21px -9px #000000;
+    font-size: 20px;
+}
+.accueil-fonctionnement button:hover {
+    background-color: #e4d1fc;
+}
+.accueil-fonctionnement span {
+    margin-left: 50px;
+}
+.accueil-fonctionnement i {
+    margin-left: 50px;
+}
+
+.accueil-restaurants {
+    background-color: rgb(238, 238, 238);
+}
+.accueil-restaurants h2 {
+    text-align: left;
+    padding-top:70px;
+}
+.accueil-restaurants-bloc {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.cards-restau {
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 30px;
+}
+.cards-restau-last {
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom:30px ;
+}
+.accueil-restaurants img {
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.cards-restau-desc {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 70px;
+    width: 80%;
+    margin-left: 5%;
+}
+
+footer {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    height: 200px;
+}
+footer p {
+    margin-left: 8%;
+    margin-bottom:7px;
+
+}
+footer img {
+    color: white;
+    margin-left: 8%;
+    margin-bottom: 20px;
+}
+footer i {
+    margin-right: 20px;
+    width: 10px;
+}
 
 
  }
