@@ -13,6 +13,14 @@ header {
   padding: 35px;
   box-shadow: 20px 20px 10px -15px #111;    
 }
+header img {
+    width: 50%;
+}
+header i {
+    position: relative;
+    top: 15px;
+right: 100px;
+}
 
 .localisation-top {
     background-color: rgb(231, 231, 231);
@@ -25,9 +33,16 @@ header {
 .localisation-top i {
     margin-left: 20%;
 }
-.localisation-top p {
-    margin-left: 5%;
+.localisation-top input {
+    margin-left: 3%;
+    background-color: rgb(20, 20, 20, 0);
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
 }
+.localisation-top input:focus {
+    outline: none;    
+    }
 .accueil-reserve {
     background-color: rgb(238, 238, 238);
     display: flex;
@@ -51,16 +66,17 @@ margin-top: 30px;
 margin-bottom: 50px;
 font-weight: 200;
 }
-.accueil-reserve button {
+.accueil-reserve input {
     padding: 22px;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
     border: none;
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
 }
 .accueil-fonctionnement h2 {
     padding-top:70px;
@@ -74,28 +90,45 @@ font-weight: 200;
     width: 90%;
     margin-left: 5%;
 } 
-.accueil-fonctionnement div {
+.accueil-fonctionnement section {
     display: flex;
     flex-direction: column;
 }
 
-.accueil-fonctionnement button {
+.accueil-fonctionnement div {
     margin-bottom: 30px;
     text-align: left;
-    height: 80px;
     border-radius: 45px;
     border: none;
 	box-shadow: 0px 0px 21px -9px #000000;
     font-size: 20px;
+    display: flex;
 }
-.accueil-fonctionnement button:hover {
+.accueil-fonctionnement div:hover {
     background-color: #e4d1fc;
 }
 .accueil-fonctionnement span {
-    margin-left: 50px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
 }
 .accueil-fonctionnement i {
-    margin-left: 50px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.accueil-fonctionnement p {
+   background-color: rgb(148, 59, 250);
+   color: white;
+   text-align: center;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   position: relative;
+   top: 15px;
 }
 
 .accueil-restaurants {
@@ -114,12 +147,25 @@ font-weight: 200;
 
 .cards-restau {
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255) !important;
     margin-top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cards-restau a {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cards-restau span {
+background-color: rgb(129, 253, 191);
+color: rgb(2, 170, 120);
+padding: 8px;
+position: relative;
+top: 50px;
+left: 80%;
+border-radius: 5px;
 }
 .cards-restau-last {
     border-radius: 20px;
-    background-color: white;
     margin-top: 30px;
     margin-bottom:30px ;
 }
@@ -139,22 +185,31 @@ object-fit: cover;
     width: 80%;
     margin-left: 5%;
 }
+.cards-restau-desc i {
+   position: relative;
+   left: 110%;
+   top: -40px;
+   font-size: 20px;
+}
 
 footer {
     background-color: rgb(66, 66, 66);
     color: white;
     height: 200px;
+    display: flex;
+    flex-direction: column;
 }
-footer p {
+footer a {
     margin-left: 8%;
     margin-bottom:7px;
+color: white;
+}
+footer h1 {
+    font-family: 'Shrikhand', cursive;
+    margin-left: 8%;
 
 }
-footer img {
-    color: white;
-    margin-left: 8%;
-    margin-bottom: 20px;
-}
+
 footer i {
     margin-right: 20px;
     width: 10px;
@@ -162,3 +217,59 @@ footer i {
 
 
  }
+
+
+ /* ------------- NOUVEAU CSS menufr ------------- */
+
+ .img-top img {
+width: 100%;
+z-index: -1;
+
+ }
+ .menu-parent {
+     background-color: rgb(221, 221, 221);
+     border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+     margin-top: -20px;
+     z-index: 11;
+ }
+ .menu-parent div {
+     margin-bottom: 50px;
+     margin-left: 5%;
+ }
+ .first-div-menu-parent {
+     display: flex;
+     justify-content: space-between;
+     
+     padding-top: 40px;
+ }
+
+ .first-div-menu-parent h3 {
+    font-family: 'Shrikhand', cursive !important;
+    font-size: 30px;
+ }
+
+ .first-div-menu-parent i {
+    padding-top: 10px;
+    font-size: 20px;
+}
+.card-plat {
+    background-color: white;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.card-plat p {
+    padding: 5px
+}
+.card-plat B {
+    margin-left: 90%;
+    margin-top:-15px ;
+}
+.menu-parent hr {
+    width: 10%;
+    background-color: yellowgreen;
+    height: 1.5px;
+    border: none;
+    margin-top:7px;
+}

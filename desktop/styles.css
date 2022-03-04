@@ -27,8 +27,15 @@ header {
 .localisation-top i {
     margin-left: 0%;
 }
-.localisation-top p {
+.localisation-top input {
     margin-left: 3%;
+    background-color: rgb(20, 20, 20, 0);
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+.localisation-top input:focus {
+outline: none;    
 }
 .accueil-reserve {
     background-color: rgb(238, 238, 238);
@@ -54,7 +61,7 @@ margin-top: 30px;
 margin-bottom: 50px;
 font-weight: 200;
 }
-.accueil-reserve button {
+.accueil-reserve input {
     padding: 22px;
     border-radius: 50px;
     font-size: 20px;
@@ -64,6 +71,7 @@ font-weight: 200;
     border: none;
     width: 30%;
     margin-left: 35%;
+    text-align: center;
 }
 .accueil-fonctionnement h2 {
     padding-top:70px;
@@ -77,31 +85,44 @@ font-weight: 200;
     width: 90%;
     margin-left: 5%;
 } 
-.accueil-fonctionnement div {
+.accueil-fonctionnement section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.accueil-fonctionnement button {
+.accueil-fonctionnement div {
     margin-bottom: 30px;
     text-align: left;
-    height: 80px;
     border-radius: 45px;
     border: none;
 	box-shadow: 0px 0px 21px -9px #000000;
     font-size: 20px;
     padding: 30px;
+    display: flex;
 }
-.accueil-fonctionnement button:hover {
+.accueil-fonctionnement div:hover {
     background-color: #e4d1fc;
 }
 .accueil-fonctionnement span {
     margin-left: 15px;
+    font-weight: bold;
+
 }
 .accueil-fonctionnement i {
     margin-left: 0px;
 }
+.accueil-fonctionnement p {
+    background-color: rgb(148, 59, 250);
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 0px;
+    left: -30px
+ }
 
 .accueil-restaurants {
     background-color: rgb(238, 238, 238);
@@ -126,18 +147,40 @@ font-weight: 200;
     background-color: white;
     margin-top: 30px;
     margin-bottom:50px;
+    height: 300px;
+    cursor: pointer;
+    transition: transform .5s;
+
 }
+.cards-restau span {
+    background-color: rgb(129, 253, 191);
+    color: rgb(2, 170, 120);
+    padding: 8px;
+    position: relative;
+    top: 50px;
+    left: 70%;
+    border-radius: 5px;
+    }
 .cards-restau-last {
     border-radius: 20px;
     background-color: white;
     margin-top: 30px;
     margin-bottom:50px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.cards-restau:hover {
+    transform: scale(1.1);
+
+}
+.cards-restau-last:hover {
+    transform: scale(1.1);
+
 }
 .accueil-restaurants img {
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 width:300px;
-height: 180px;
 object-fit: cover;
 }
 
@@ -149,27 +192,32 @@ object-fit: cover;
     width: 80%;
     margin-left: 5%;
 }
-
+.cards-restau-desc i {
+    position: relative;
+    left: 105%;
+    top: -40px;
+    font-size: 20px;
+ }
 footer {
     background-color: rgb(66, 66, 66);
     color: white;
     height: 150px;
 }
-footer p {
+footer h1 {
+    font-family: 'Shrikhand', cursive;
+    margin-left: 8%;
+
+}
+footer a {
     margin-left: 8%;
     margin-bottom:7px;
-
+    color: white;
+    cursor: pointer;
 }
 footer div {
 display: flex;
 }
-footer img {
-    color: white;
-    margin-left: 8%;
-    margin-bottom: 40px;
-    margin-top: 20px;
 
-}
 footer i {
     margin-right: 20px;
     width: 10px;
