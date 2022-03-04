@@ -1,5 +1,4 @@
-@media screen and (min-width: 1000px)
-{ 
+
    /* decaler en mobile */
 *
 {
@@ -61,7 +60,31 @@ margin-top: 30px;
 margin-bottom: 50px;
 font-weight: 200;
 }
-.accueil-reserve input {
+
+/* changer  */
+
+.btn-link {
+    color: #000000;
+    margin-top: 25px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0px 0px 14px -4px rgb(0 0 0 / 78%);
+    -webkit-box-shadow: 0px 4px 10px -4px rgb(0 0 0 / 78%);
+    -moz-box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.78);
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 23px;
+    opacity: 0.8;
+    font-weight: 400;
+    padding: 15px 20px; 
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 13rem;
+    text-align: center;
+    margin: auto;
+}
+/* .accueil-reserve input {
     padding: 22px;
     border-radius: 50px;
     font-size: 20px;
@@ -72,7 +95,7 @@ font-weight: 200;
     width: 30%;
     margin-left: 35%;
     text-align: center;
-}
+} */
 .accueil-fonctionnement h2 {
     padding-top:70px;
     padding-bottom:70px;
@@ -107,10 +130,11 @@ font-weight: 200;
 .accueil-fonctionnement span {
     margin-left: 15px;
     font-weight: bold;
-
+    margin-top: 6px;
 }
 .accueil-fonctionnement i {
     margin-left: 0px;
+    margin-top: 7px;
 }
 .accueil-fonctionnement p {
     background-color: rgb(148, 59, 250);
@@ -121,7 +145,8 @@ font-weight: 200;
     height: 25px;
     position: relative;
     top: 0px;
-    left: -30px
+    left: -42px;
+    padding: 5px;
  }
 
 .accueil-restaurants {
@@ -224,4 +249,4 @@ footer i {
 }
 
 
- }
+
