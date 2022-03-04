@@ -1,22 +1,19 @@
-@media screen and (min-width: 768px) and (max-width: 999px)
-{ 
-   /* decaler en mobile */
-*
-{
-	padding: 0px;
-	margin: 0px;
-	font-family: 'Raleway', sans-serif;
-}
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  /* decaler en mobile */
+  * {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+  }
 
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 20px 20px 10px -15px #111;
+  }
 
-header {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  box-shadow: 20px 20px 10px -15px #111;    
-}
-
-.localisation-top {
+  .localisation-top {
     background-color: rgb(231, 231, 231);
     padding: 25px;
     font-size: 25px;
@@ -24,99 +21,96 @@ header {
     color: rgb(20, 20, 20);
     display: flex;
     justify-content: center;
-
-}
-.localisation-top i {
+  }
+  .localisation-top i {
     margin-left: 0%;
-}
-.localisation-top input {
+  }
+  .localisation-top input {
     margin-left: 3%;
     background-color: rgb(20, 20, 20, 0);
     border: none;
     font-size: 20px;
     text-decoration: none;
-}
-.localisation-top input:focus {
-    outline: none;    
-    }
-.accueil-reserve {
+  }
+  .localisation-top input:focus {
+    outline: none;
+  }
+  .accueil-reserve {
     background-color: rgb(238, 238, 238);
     display: flex;
     justify-content: start;
-}
-.accueil-reserve div {
-padding: 60px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 100%;
-}
-h2 {
-font-size: 30px;
-text-align: start;
-color: black;
-}
-.accueil-reserve p {
+  }
+  .accueil-reserve div {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: start;
+    color: black;
+  }
+  .accueil-reserve p {
     font-size: 20px;
-text-align: start;
-margin-top: 30px;
-margin-bottom: 50px;
-font-weight: 200;
-}
-.accueil-reserve input {
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 200;
+  }
+  .accueil-reserve input {
     padding: 22px;
     border-radius: 50px;
     font-size: 20px;
     font-weight: 500;
     color: white;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient(#ff79da, #9356dc);
     border: none;
     width: 50%;
     margin-left: 25%;
     text-align: center;
-}
-.accueil-fonctionnement h2 {
-    padding-top:70px;
-    padding-bottom:70px;
+  }
+  .accueil-fonctionnement h2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     justify-content: start;
-}
-.accueil-fonctionnement{
+  }
+  .accueil-fonctionnement {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin-left: 5%;
-} 
-.accueil-fonctionnement section {
+  }
+  .accueil-fonctionnement section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+  }
 
-.accueil-fonctionnement div {
+  .accueil-fonctionnement div {
     margin-bottom: 30px;
     text-align: left;
     /* height: 60px; */
     border-radius: 45px;
     border: none;
-	box-shadow: 0px 0px 21px -9px #000000;
+    box-shadow: 0px 0px 21px -9px #000000;
     font-size: 12px;
     padding: 15px;
     display: flex;
-
-}
-.accueil-fonctionnement div:hover {
+  }
+  .accueil-fonctionnement div:hover {
     background-color: #e4d1fc;
-}
-.accueil-fonctionnement span {
+  }
+  .accueil-fonctionnement span {
     margin-left: 15px;
     font-weight: bold;
-
-}
-.accueil-fonctionnement i {
+  }
+  .accueil-fonctionnement i {
     margin-left: 0px;
-}
-.accueil-fonctionnement p {
+  }
+  .accueil-fonctionnement p {
     background-color: rgb(148, 59, 250);
     color: white;
     text-align: center;
@@ -125,34 +119,29 @@ font-weight: 200;
     height: 18.5px;
     position: relative;
     top: 0px;
-    left: -15px
- }
-.accueil-restaurants {
+    left: -15px;
+  }
+  .accueil-restaurants {
     background-color: rgb(238, 238, 238);
-}
-.accueil-restaurants h2 {
+    padding-left: 5%;
+  }
+  .accueil-restaurants h2 {
     text-align: left;
-    padding-top:70px;
-}
-.accueil-restaurants-bloc {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-left: 5%;
-}
-.accueil-restau-card-desktop {
+    padding-top: 70px;
+  }
+  .accueil-restau-card-desktop {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-.cards-restau {
+  }
+  .cards-restau {
     border-radius: 20px;
     background-color: white;
     margin-top: 30px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     cursor: pointer;
-}
-.cards-restau span {
+  }
+  .cards-restau span {
     background-color: rgb(129, 253, 191);
     color: rgb(2, 170, 120);
     padding: 8px;
@@ -160,68 +149,63 @@ font-weight: 200;
     top: 40px;
     left: 70%;
     border-radius: 5px;
-    }
-.cards-restau-last {
+  }
+  .cards-restau-last {
     border-radius: 20px;
     background-color: white;
     margin-top: 30px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     cursor: pointer;
+  }
+  .accueil-restaurants img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+  }
 
-}
-.accueil-restaurants img {
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-width:300px;
-height: 180px;
-object-fit: cover;
-}
-
-.cards-restau-desc {
+  .cards-restau-desc {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     height: 70px;
     width: 80%;
     margin-left: 5%;
-}
+  }
 
-.cards-restau-desc i {
+  .cards-restau-desc i {
     position: relative;
     left: 110%;
     top: -40px;
     font-size: 20px;
- }
+  }
 
-footer {
+  footer {
     background-color: rgb(66, 66, 66);
     color: white;
     height: 150px;
-}
-footer h1 {
-    font-family: 'Shrikhand', cursive;
+  }
+  footer h1 {
+    font-family: "Shrikhand", cursive;
     margin-left: 8%;
-}
-footer a {
+  }
+  footer a {
     margin-left: 8%;
-    margin-bottom:7px;
+    margin-bottom: 7px;
     color: white;
-
-}
-footer div {
-display: flex;
-}
-footer img {
+  }
+  footer div {
+    display: flex;
+  }
+  footer img {
     color: white;
     margin-left: 8%;
     margin-bottom: 40px;
     margin-top: 20px;
-
-}
-footer i {
+  }
+  footer i {
     margin-right: 20px;
     width: 10px;
+  }
 }
-
-
- }

@@ -1,88 +1,91 @@
-
-   /* decaler en mobile */
-*
-{
-	padding: 0px;
-	margin: 0px;
-	font-family: 'Raleway', sans-serif;
+/* decaler en mobile */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
 }
 header {
   display: flex;
   justify-content: center;
   padding: 10px;
-  box-shadow: 20px 20px 10px -15px #111;    
+  box-shadow: 20px 20px 10px -15px #111;
 }
 
 .localisation-top {
-    background-color: rgb(231, 231, 231);
-    padding: 25px;
-    font-size: 25px;
-    font-weight: 500;
-    color: rgb(20, 20, 20);
-    display: flex;
-    justify-content: center;
-
+  background-color: rgb(231, 231, 231);
+  padding: 25px;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
 }
 .localisation-top i {
-    margin-left: 0%;
+  margin-left: 0%;
 }
 .localisation-top input {
-    margin-left: 3%;
-    background-color: rgb(20, 20, 20, 0);
-    border: none;
-    font-size: 20px;
-    text-decoration: none;
+  margin-left: 3%;
+  background-color: rgb(20, 20, 20, 0);
+  border: none;
+  font-size: 20px;
+  text-decoration: none;
 }
 .localisation-top input:focus {
-outline: none;    
+  outline: none;
 }
 .accueil-reserve {
-    background-color: rgb(238, 238, 238);
-    display: flex;
-    justify-content: start;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: start;
 }
 .accueil-reserve div {
-padding: 60px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 100%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 h2 {
-font-size: 30px;
-text-align: start;
-color: black;
+  font-size: 30px;
+  text-align: start;
+  color: black;
 }
 .accueil-reserve p {
-    font-size: 20px;
-text-align: start;
-margin-top: 30px;
-margin-bottom: 50px;
-font-weight: 200;
+  font-size: 20px;
+  text-align: start;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-weight: 200;
 }
 
 /* changer  */
 
 .btn-link {
-    color: #000000;
-    margin-top: 25px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    box-shadow: 0px 0px 14px -4px rgb(0 0 0 / 78%);
-    -webkit-box-shadow: 0px 4px 10px -4px rgb(0 0 0 / 78%);
-    -moz-box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.78);
-    color: #fff;
-    font-size: 0.8rem;
-    border-radius: 23px;
-    opacity: 0.8;
-    font-weight: 400;
-    padding: 15px 20px; 
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    width: 13rem;
-    text-align: center;
-    margin: auto;
+  color: #000000;
+  margin-top: 25px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 0px 14px -4px rgb(0 0 0 / 78%);
+  -webkit-box-shadow: 0px 4px 10px -4px rgb(0 0 0 / 78%);
+  -moz-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 23px;
+  opacity: 0.8;
+  font-weight: 400;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  width: 13rem;
+  text-align: center;
+  margin: auto;
 }
 /* .accueil-reserve input {
     padding: 22px;
@@ -97,156 +100,159 @@ font-weight: 200;
     text-align: center;
 } */
 .accueil-fonctionnement h2 {
-    padding-top:70px;
-    padding-bottom:70px;
-    display: flex;
-    justify-content: start;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: start;
 }
-.accueil-fonctionnement{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-left: 5%;
-} 
+.accueil-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
 .accueil-fonctionnement section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .accueil-fonctionnement div {
-    margin-bottom: 30px;
-    text-align: left;
-    border-radius: 45px;
-    border: none;
-	box-shadow: 0px 0px 21px -9px #000000;
-    font-size: 20px;
-    padding: 30px;
-    display: flex;
+  margin-bottom: 30px;
+  text-align: left;
+  border-radius: 45px;
+  border: none;
+  box-shadow: 0px 0px 21px -9px #000000;
+  font-size: 20px;
+  padding: 30px;
+  display: flex;
 }
 .accueil-fonctionnement div:hover {
-    background-color: #e4d1fc;
+  background-color: #e4d1fc;
 }
 .accueil-fonctionnement span {
-    margin-left: 15px;
-    font-weight: bold;
-    margin-top: 6px;
+  margin-left: 15px;
+  font-weight: bold;
+  margin-top: 6px;
 }
 .accueil-fonctionnement i {
-    margin-left: 0px;
-    margin-top: 7px;
+  margin-left: 0px;
+  margin-top: 7px;
 }
 .accueil-fonctionnement p {
-    background-color: rgb(148, 59, 250);
-    color: white;
-    text-align: center;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    top: 0px;
-    left: -42px;
-    padding: 5px;
- }
+  background-color: rgb(148, 59, 250);
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 0px;
+  left: -42px;
+  padding: 5px;
+}
 
 .accueil-restaurants {
-    background-color: rgb(238, 238, 238);
+  background-color: rgb(238, 238, 238);
+  padding-left: 5%;
 }
 .accueil-restaurants h2 {
-    text-align: left;
-    padding-top:70px;
-}
-.accueil-restaurants-bloc {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-left: 5%;
+  text-align: left;
+  padding-top: 70px;
 }
 .accueil-restau-card-desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .cards-restau {
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 30px;
-    margin-bottom:50px;
-    height: 300px;
-    cursor: pointer;
-    transition: transform .5s;
-
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 400px;
+  width: 45%;
+  cursor: pointer;
+  transition: transform 0.5s;
 }
+
+.cards-restau figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-restau figcaption {
+  padding: 25px;
+}
+
 .cards-restau span {
-    background-color: rgb(129, 253, 191);
-    color: rgb(2, 170, 120);
-    padding: 8px;
-    position: relative;
-    top: 50px;
-    left: 70%;
-    border-radius: 5px;
-    }
+  background-color: rgb(129, 253, 191);
+  color: rgb(2, 170, 120);
+  padding: 8px;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  border-radius: 5px;
+}
 .cards-restau-last {
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 30px;
-    margin-bottom:50px;
-    cursor: pointer;
-    transition: transform .5s;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 .cards-restau:hover {
-    transform: scale(1.1);
-
+  transform: scale(1.1);
 }
 .cards-restau-last:hover {
-    transform: scale(1.1);
-
+  transform: scale(1.1);
 }
 .accueil-restaurants img {
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-width:300px;
-object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
 }
 
 .cards-restau-desc {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 70px;
-    width: 80%;
-    margin-left: 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 70px;
+  width: 80%;
+  margin-left: 5%;
 }
 .cards-restau-desc i {
-    position: relative;
-    left: 105%;
-    top: -40px;
-    font-size: 20px;
- }
+  position: relative;
+  left: 105%;
+  top: -40px;
+  font-size: 20px;
+}
 footer {
-    background-color: rgb(66, 66, 66);
-    color: white;
-    height: 150px;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  height: 150px;
 }
 footer h1 {
-    font-family: 'Shrikhand', cursive;
-    margin-left: 8%;
-
+  font-family: "Shrikhand", cursive;
+  margin-left: 8%;
 }
 footer a {
-    margin-left: 8%;
-    margin-bottom:7px;
-    color: white;
-    cursor: pointer;
+  margin-left: 8%;
+  margin-bottom: 7px;
+  color: white;
+  cursor: pointer;
 }
 footer div {
-display: flex;
+  display: flex;
 }
 
 footer i {
-    margin-right: 20px;
-    width: 10px;
+  margin-right: 20px;
+  width: 10px;
 }
-
-
-
