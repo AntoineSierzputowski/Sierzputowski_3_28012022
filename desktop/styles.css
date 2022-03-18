@@ -118,6 +118,7 @@ h2 {
 }
 
 .accueil-fonctionnement div {
+  width: 20%;
   margin-bottom: 30px;
   text-align: left;
   border-radius: 45px;
@@ -126,6 +127,7 @@ h2 {
   font-size: 20px;
   padding: 30px;
   display: flex;
+  background-color:rgb(238, 238, 238) ;
 }
 .accueil-fonctionnement div:hover {
   background-color: #e4d1fc;
@@ -134,6 +136,7 @@ h2 {
   margin-left: 15px;
   font-weight: bold;
   margin-top: 6px;
+  font-size: 15px;
 }
 .accueil-fonctionnement i {
   margin-left: 0px;
@@ -193,8 +196,8 @@ h2 {
   color: rgb(2, 170, 120);
   padding: 8px;
   position: absolute;
-  top: 3%;
-  right: 3%;
+  margin-top: 20px;
+  margin-left: 35%;
   border-radius: 5px;
 }
 .cards-restau-last {
@@ -206,10 +209,10 @@ h2 {
   transition: transform 0.5s;
 }
 .cards-restau:hover {
-  transform: scale(1.1);
+  box-shadow: none;
 }
 .cards-restau-last:hover {
-  transform: scale(1.1);
+  box-shadow: none;
 }
 .accueil-restaurants img {
   border-top-left-radius: 20px;
@@ -255,4 +258,82 @@ footer div {
 footer i {
   margin-right: 20px;
   width: 10px;
+}
+ul {
+  list-style-type: none;
+}
+/* ------------- NOUVEAU CSS menufr ------------- */
+
+.img-top img {
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  object-fit: cover;
+}
+.menu-parent {
+  background-color: rgb(243, 243, 243);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -20px;
+  z-index: 11;
+  padding-bottom: 50px;
+}
+.menu-parent h4 {
+  font-weight: 200;
+}
+.menu-parent div {
+  margin-bottom: 50px;
+  width: 60%;
+  margin-left: 20%;
+}
+.first-div-menu-parent {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 40px;
+}
+
+.first-div-menu-parent h3 {
+  font-family: "Shrikhand", cursive  ;
+  font-size: 30px;
+}
+
+.first-div-menu-parent i {
+  padding-top: 10px;
+  font-size: 20px;
+}
+.card-plat {
+  background-color: white;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.card-plat p {
+  padding: 5px;
+}
+.card-plat B {
+  right: 35%;
+  margin-top: -15px;
+  position: absolute;
+}
+.menu-parent hr {
+  width: 10%;
+  background-color: yellowgreen;
+  height: 2.5px;
+  border: none;
+  margin-top: 7px;
+}
+.btn-cmd {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  border-radius: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  border: none;
 }
