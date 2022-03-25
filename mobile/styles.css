@@ -243,84 +243,12 @@
     margin-right: 20px;
     width: 10px;
   }
+  /* ------------- NOUVEAU CSS menufr ------------- */
+
+  .menu-parent {
+    width: 100%;
+    margin-left: 0%;
+ }
 }
 
-/* ------------- NOUVEAU CSS menufr ------------- */
-.img-top img {
-  width: 100%;
-  z-index: -1;
-}
-.card-plat {
-  background-color: white;
-  padding-top: 10px;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-.card-plat p {
-  padding: 5px;
-}
-.card-plat B {
-  right: 7%;
-  margin-top: -15px;
-  position: absolute;
-}
-.menu-parent div {
-  margin-bottom: 50px;
-  width: 95%;
-  margin-left: 2.5%;
-}
-/* .img-top img {
-  width: 100%;
-  z-index: -1;
-}
-.menu-parent {
-  background-color: rgb(221, 221, 221);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  margin-top: -20px;
-  z-index: 11;
-}
-.menu-parent h4 {
-  font-weight: 200;
-}
-.menu-parent div {
-  margin-bottom: 50px;
-  width: 95%;
-  margin-left: 2.5%;
-}
-.first-div-menu-parent {
-  display: flex;
-  justify-content: space-between;
 
-  padding-top: 40px;
-}
-
-.first-div-menu-parent h3 {
-  font-family: "Shrikhand", cursive  ;
-  font-size: 30px;
-}
-
-.first-div-menu-parent i {
-  padding-top: 10px;
-  font-size: 20px;
-}
-.card-plat {
-  background-color: white;
-  padding-top: 20px;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-.card-plat p {
-  padding: 5px;
-}
-.card-plat B {
-  margin-left: 90%;
-  margin-top: -15px;
-}
-.menu-parent hr {
-  width: 10%;
-  background-color: yellowgreen;
-  height: 2.5px;
-  border: none;
-  margin-top: 7px;
-} */

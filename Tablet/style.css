@@ -209,4 +209,14 @@
     margin-right: 20px;
     width: 10px;
   }
+  .menu-parent {
+    width: 80%;
+    margin-left: 10%;
+ }
+ header i {
+  position: relative;
+  top: 15px;
+  font-size: 25px;
+  right: 20%;
+}
 }
