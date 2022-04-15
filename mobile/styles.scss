@@ -1,0 +1,251 @@
+$color_1: rgb(20, 20, 20);
+$color_2: black;
+$color_3: #000000;
+$color_4: #fff;
+$color_5: white;
+$color_6: rgb(2, 170, 120);
+$font-family_1: "Raleway", sans-serif;
+$font-family_2: "Shrikhand", cursive;
+$background-color_1: rgb(231, 231, 231);
+$background-color_2: rgb(20, 20, 20, 0);
+$background-color_3: rgb(238, 238, 238);
+$background-color_4: #e4d1fc;
+$background-color_5: rgb(148, 59, 250);
+$background-color_6: rgb(255, 255, 255);
+$background-color_7: white;
+$background-color_8: rgb(129, 253, 191);
+$background-color_9: rgb(66, 66, 66);
+
+/* decaler en mobile */
+/* ------------- NOUVEAU CSS menufr ------------- */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+	* {
+		padding: 0px;
+		margin: 0px;
+		font-family: $font-family_1;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		padding: 35px;
+		box-shadow: 20px 20px 10px -15px #111;
+		img {
+			width: 50%;
+		}
+		i {
+			position: relative;
+			top: 15px;
+			right: 100px;
+		}
+	}
+	.localisation-top {
+		background-color: $background-color_1;
+		padding: 25px;
+		font-size: 25px;
+		font-weight: 500;
+		color: $color_1;
+		display: flex;
+		i {
+			margin-left: 20%;
+		}
+		input {
+			margin-left: 3%;
+			background-color: $background-color_2;
+			border: none;
+			font-size: 20px;
+			text-decoration: none;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	.accueil-reserve {
+		background-color: $background-color_3;
+		display: flex;
+		justify-content: center;
+		div {
+			padding: 60px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		p {
+			font-size: 20px;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 50px;
+			font-weight: 200;
+		}
+	}
+	h2 {
+		font-size: 30px;
+		text-align: center;
+		color: $color_2;
+	}
+	.btn-link {
+		color: $color_3;
+		margin-top: 25px;
+		background: -webkit-gradient( linear, left top, left bottom, from(#ff79da), to(#9356dc) );
+		background: linear-gradient(#ff79da, #9356dc);
+		box-shadow: 0px 0px 14px -4px rgb(0 0 0 / 78%);
+		-webkit-box-shadow: 0px 4px 10px -4px rgb(0 0 0 / 78%);
+		-moz-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
+		color: $color_4;
+		font-size: 0.8rem;
+		border-radius: 23px;
+		opacity: 0.8;
+		font-weight: 400;
+		padding: 15px 20px;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+		width: 13rem;
+		text-align: center;
+		margin: auto;
+	}
+	.accueil-fonctionnement {
+		h2 {
+			padding-top: 70px;
+			padding-bottom: 70px;
+			display: flex;
+			justify-content: start;
+		}
+		flex-direction: column;
+		width: 90%;
+		margin-left: 5%;
+		justify-content: center;
+		section {
+			display: flex;
+			flex-direction: column;
+		}
+		div {
+			width: 90%;
+			margin-bottom: 30px;
+			text-align: left;
+			border-radius: 45px;
+			border: none;
+			box-shadow: 0px 0px 21px -9px #000000;
+			font-size: 20px;
+			display: flex;
+			padding: 0px;
+			&:hover {
+				background-color: $background-color_4;
+			}
+		}
+		span {
+			margin-left: 10%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+		i {
+			margin-left: 10%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		p {
+			background-color: $background-color_5;
+			color: $color_5;
+			text-align: center;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			position: relative;
+			top: 15px;
+			left: -15px;
+		}
+	}
+	.accueil-restaurants {
+		background-color: $background-color_3;
+		padding: 0% 5% 10% 5%;
+		h2 {
+			text-align: left;
+			padding-top: 70px;
+		}
+		img {
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+	}
+	.cards-restau {
+		border-radius: 20px;
+		background-color: $background-color_6;
+		margin-top: 30px;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		width: 100%;
+		height: 100%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin: 15px 0;
+		a {
+			background-color: $background-color_7;
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		}
+		span {
+			background-color: $background-color_8;
+			color: $color_6;
+			padding: 8px;
+			position: absolute;
+			margin-top: 15px;
+			right: 35px;
+			border-radius: 5px;
+		}
+	}
+	.cards-restau-last {
+		border-radius: 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.accueil-restau-card-desktop {
+		display: flex;
+		flex-direction: column;
+	}
+	.cards-restau-desc {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		height: 70px;
+		width: 80%;
+		margin-left: 5%;
+		i {
+			position: relative;
+			left: 110%;
+			top: -40px;
+			font-size: 20px;
+		}
+	}
+	figcaption {
+		i {
+			position: relative;
+			left: 95%;
+			font-size: 25px;
+			margin-top: -30px;
+		}
+	}
+	footer {
+		background-color: $background-color_9;
+		color: $color_5;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		li {
+			margin-bottom: 7px;
+			color: $color_5;
+		}
+		h1 {
+			font-family: $font-family_2;
+			margin-left: 8%;
+		}
+		i {
+			margin-right: 20px;
+			width: 10px;
+		}
+	}
+	.menu-parent {
+		width: 100%;
+		margin-left: 0%;
+	}
+}
