@@ -5,123 +5,45 @@
   font-family: "Raleway", sans-serif;
 }
 /* Absolute Center Spinner */
-.loading {
-  position: fixed;
-  z-index: 999;
-  height: 2em;
-  width: 2em;
-  overflow: visible;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
 
-/* Transparent Overlay */
-.loading:before {
-  content: '';
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
+
+
+.loader {
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  background-color: #c4c3c0;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader 1s;
+  animation-fill-mode: both;
 }
-
-/* :not(:required) hides these rules from IE9 and below */
-.loading:not(:required) {
-  /* hide "loading..." text */
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+.loader__circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 50px;
+  display: inline-block;
+  animation: boing 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-
-.loading:not(:required):after {
-  content: '';
-  display: block;
-  font-size: 10px;
-  width: 1em;
-  height: 1em;
-  margin-top: -0.5em;
-  -webkit-animation: spinner 1500ms infinite linear;
-  -moz-animation: spinner 1500ms infinite linear;
-  -ms-animation: spinner 1500ms infinite linear;
-  -o-animation: spinner 1500ms infinite linear;
-  animation: spinner 1500ms infinite linear;
-  border-radius: 0.5em;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
-  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+.loader__circle--1 {
+  background-color: #9356DC;
+  animation-delay: 0.1s;
 }
-
-/* Animation */
-
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.loader__circle--2 {
+  background-color: #FF79DA;
+  animation-delay: 0.2s;
 }
-@-moz-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-o-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.loader__circle--3 {
+  background-color: #99E2D0;
+  animation-delay: 0.4s;
 }
 
 header {
@@ -129,6 +51,10 @@ header {
   justify-content: center;
   padding: 10px;
   box-shadow: 20px 20px 10px -15px #111;
+}
+header a {
+  position: absolute;
+  left: 20px;
 }
 
 .localisation-top {
@@ -354,7 +280,7 @@ h2 {
   justify-content: space-around;
   flex-direction: column;
   height: 70px;
-  width: 80%;
+  width: 95%;
   margin-left: 5%;
 }
 .cards-restau-desc i {
@@ -421,11 +347,11 @@ header a {
 .menu-parent h2 {
   font-weight: 200;
 }
-.menu-parent div {
+/* .menu-parent div {
   width: 60%;
   margin-left: 20%;
   gap:20px;
-}
+} */
 .menu-part {
   margin-top: 30px;
 }
@@ -445,21 +371,89 @@ header a {
   padding-top: 10px;
   font-size: 20px;
 }
-.card-plat {
-  background-color: white;
-  padding: 10px;
-  border-radius: 20px;
-}
-.card-plat p {
-  padding: 5px;
-}
-.card-plat B {
-  right: 35%;
-  margin-top: -15px;
-  position: absolute;
+.first-div-menu-parent i:hover {
+  webkit-animation: fill 1s ease-out;
+  animation: fill 1s ease-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: -o-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
-h2::after {
+figcaption i:hover {
+  webkit-animation: fill 1s ease-out;
+  animation: fill 1s ease-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: -o-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+
+.card-plat {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  width: 95%;
+  margin-top: 20px;
+  margin-left: 2.5%;
+   
+
+}
+.card1 {
+  animation-delay: 0.2s;
+}
+.card2 {
+  animation-delay: 0.4s;
+}
+.card3 {
+  animation-delay: 0.6s;
+}
+.card-plat:hover .card-plat__check  {
+opacity: 1;
+margin-left: 0px;
+margin-right: 0px;
+width: 60px;
+}
+.card-plat p {
+  width: 90%;
+}
+.card-plat__p {
+width: 95%;
+padding: 15px;
+
+}
+.card-plat B {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.card-plat__check {
+  width: 0px;
+  opacity: 0;
+  background-color: #99E2D0;
+  /* margin-left: 25px;
+  margin-right: -70px; */
+  border-radius: 0 10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+color: white;
+}
+
+ .accueil-restaurants h2::after {
   display: block;
   font-weight: 800;
   padding-top: 3px;
@@ -467,6 +461,15 @@ h2::after {
   content: '';
   width: 35px;
   background-color: #99E2D0;
+}
+.menu-part__plat h2::after {
+  display: block;
+  font-weight: 800;
+  padding-top: 3px;
+  margin-top: 3px;
+  content: '';
+  width: 35px;
+  background-color: #99E2D0; 
 }
 .btn-cmd {
   display: block;
@@ -493,21 +496,12 @@ box-shadow: inset 5px 5px 10px -7px rgba(0,0,0,0.6);
   width: 100%;
   z-index: -1;
 }
-.card-plat {
-  background-color: white;
-  padding-top: 10px;
-  margin-top: 20px;
-  border-radius: 20px;
-}
+
 .card-plat p {
   padding: 5px;
 }
-.card-plat B {
-  right: 7%;
-  margin-top: -15px;
-  position: absolute;
-}
-.menu-parent div {
+
+.menu-title {
   width: 95%;
   margin-left: 2.5%;
 }
