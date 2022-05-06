@@ -1,230 +1,52 @@
-$color_1: rgb(20, 20, 20);
-$color_2: black;
-$color_3: white;
-$color_4: rgb(2, 170, 120);
-$font-family_1: "Raleway", sans-serif;
-$font-family_2: "Shrikhand", cursive;
-$background-color_1: rgb(231, 231, 231);
-$background-color_2: rgb(20, 20, 20, 0);
-$background-color_3: rgb(238, 238, 238);
-$background-color_4: #e4d1fc;
-$background-color_5: rgb(148, 59, 250);
-$background-color_6: white;
-$background-color_7: rgb(129, 253, 191);
-$background-color_8: rgb(66, 66, 66);
-
 /* decaler en mobile */
 @media screen and (min-width: 768px) and (max-width: 999px) {
-	* {
-		padding: 0px;
-		margin: 0px;
-		font-family: $font-family_1;
-	}
-	header {
-		display: flex;
-		justify-content: center;
-		padding: 10px;
-		box-shadow: 20px 20px 10px -15px #111;
-		i {
-			position: relative;
-			top: 15px;
-			font-size: 25px;
-			right: 20%;
-		}
-	}
-	.localisation-top {
-		background-color: $background-color_1;
-		padding: 25px;
-		font-size: 25px;
-		font-weight: 500;
-		color: $color_1;
-		display: flex;
-		justify-content: center;
-		i {
-			margin-left: 0%;
-		}
-		input {
-			margin-left: 3%;
-			background-color: $background-color_2;
-			border: none;
-			font-size: 20px;
-			text-decoration: none;
-			&:focus {
-				outline: none;
-			}
-		}
-	}
-	.accueil-reserve {
-		background-color: $background-color_3;
-		display: flex;
-		justify-content: start;
-		div {
-			padding: 60px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			width: 100%;
-		}
-		p {
-			font-size: 20px;
-			text-align: start;
-			margin-top: 30px;
-			margin-bottom: 50px;
-			font-weight: 200;
-		}
-		input {
-			padding: 22px;
-			border-radius: 50px;
-			font-size: 20px;
-			font-weight: 500;
-			color: $color_3;
-			background: linear-gradient(#ff79da, #9356dc);
-			border: none;
-			width: 50%;
-			margin-left: 25%;
-			text-align: center;
-		}
-	}
-	h2 {
-		font-size: 30px;
-		text-align: start;
-		color: $color_2;
-	}
-	.accueil-fonctionnement {
-		h2 {
-			padding-top: 70px;
-			padding-bottom: 70px;
-			display: flex;
-			justify-content: start;
-		}
-		display: flex;
-		flex-direction: column;
-		width: 90%;
-		margin-left: 5%;
-		section {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-		}
-		div {
-			margin-bottom: 30px;
-			text-align: left;
-			border-radius: 45px;
-			border: none;
-			box-shadow: 0px 0px 21px -9px #000000;
-			font-size: 12px;
-			padding: 15px;
-			display: flex;
-			&:hover {
-				background-color: $background-color_4;
-			}
-		}
-		span {
-			margin-left: 15px;
-			font-weight: bold;
-		}
-		i {
-			margin-left: 0px;
-		}
-		p {
-			background-color: $background-color_5;
-			color: $color_3;
-			text-align: center;
-			border-radius: 50%;
-			width: 20px;
-			height: 18.5px;
-			position: relative;
-			top: 0px;
-			left: -15px;
-		}
-	}
-	.accueil-restaurants {
-		background-color: $background-color_3;
-		padding-left: 5%;
-		h2 {
-			text-align: left;
-			padding-top: 70px;
-		}
-		img {
-			border-top-left-radius: 20px;
-			border-top-right-radius: 20px;
-			width: 100%;
-			height: 180px;
-			object-fit: cover;
-		}
-	}
-	.accueil-restau-card-desktop {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	.cards-restau {
-		border-radius: 20px;
-		background-color: $background-color_6;
-		margin-top: 30px;
-		margin-bottom: 50px;
-		cursor: pointer;
-		height: 100% !important;
-		span {
-			background-color: $background-color_7;
-			color: $color_4;
-			padding: 8px;
-			position: relative;
-			top: 40px;
-			left: 70%;
-			border-radius: 5px;
-		}
-	}
-	.cards-restau-last {
-		border-radius: 20px;
-		background-color: $background-color_6;
-		margin-top: 30px;
-		margin-bottom: 50px;
-		cursor: pointer;
-	}
-	.cards-restau-desc {
-		display: flex;
-		justify-content: space-around;
-		flex-direction: column;
-		height: 70px;
-		width: 80%;
-		margin-left: 5%;
-		i {
-			position: relative;
-			left: 110%;
-			top: -40px;
-			font-size: 20px;
-		}
-	}
-	footer {
-		background-color: $background-color_8;
-		color: $color_3;
-		height: 150px;
-		h1 {
-			font-family: $font-family_2;
-			margin-left: 8%;
-		}
-		li {
-			margin-left: 100px !important;
-			margin-bottom: 7px;
-			color: $color_3;
-		}
-		div {
-			display: flex;
-		}
-		img {
-			color: $color_3;
-			margin-left: 8%;
-			margin-bottom: 40px;
-			margin-top: 20px;
-		}
-		i {
-			margin-right: 20px;
-			width: 10px;
-		}
-	}
-	.menu-parent {
-		width: 80%;
-		margin-left: 10%;
-	}
+  header i {
+    right: 20%;
+  }
+
+  .accueil-fonctionnement {
+    div {
+      font-size: 12px;
+      padding: 15px;
+    }
+
+    p {
+      width: 20px;
+      height: 18.5px;
+      left: -15px;
+    }
+  }
+
+  .accueil-restaurants {
+    img {
+      height: 180px;
+    }
+  }
+
+  .cards-restau {
+    height: 100%;
+
+    span {
+      position: relative;
+      top: 40px;
+      left: 70%;
+      border-radius: 5px;
+    }
+
+    &-desc {
+      width: 80%;
+
+      i {
+        left: 110%;
+      }
+    }
+  }
+
+  footer {
+    li {
+      margin-left: 100px;
+      margin-bottom: 7px;
+      color: white;
+    }
+  }
 }
