@@ -249,7 +249,13 @@
   .menu-parent {
     width: 100%;
     margin-left: 0%;
+    padding: 0 0 50px 0;
  }
+ .menu-part h2 {
+   text-align: start;
+   padding-left: 20px;
+ }
+
 }
 
 

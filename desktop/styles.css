@@ -294,9 +294,13 @@ footer {
   color: white;
   height: 150px;
 }
-footer h1 {
+h1 {
+  font-size: 30px;
+}
+footer h4 {
   font-family: "Shrikhand", cursive;
   margin-left: 8%;
+  font-size: 30px;
 }
 footer ul {
   margin-left: 8%;
@@ -338,7 +342,7 @@ header a {
   border-radius: 30px;
   margin-top: -30px;
   z-index: 11;
-  padding-bottom: 50px;
+  padding: 0 20px 50px 20px;
   position: relative;
   width: 60% ;
   margin-left: 20%;
@@ -401,8 +405,7 @@ figcaption i:hover {
   width: 95%;
   margin-top: 20px;
   margin-left: 2.5%;
-   
-
+  box-shadow: 5px 5px 5px #e7e7e7;
 }
 .card1 {
   animation-delay: 0.2s;
@@ -462,7 +465,7 @@ color: white;
   width: 35px;
   background-color: #99E2D0;
 }
-.menu-part__plat h2::after {
+.menu-part__plat::after {
   display: block;
   font-weight: 800;
   padding-top: 3px;
@@ -505,6 +508,11 @@ box-shadow: inset 5px 5px 10px -7px rgba(0,0,0,0.6);
   width: 95%;
   margin-left: 2.5%;
 }
+.menu-title h1 {
+  font-family: "Shrikhand";
+  font-size: 30px;
+}
+
 header i {
   position: relative;
   top: 15px;
