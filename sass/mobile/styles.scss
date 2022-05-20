@@ -24,14 +24,14 @@
 	}
 
 	.accueil-fonctionnement {
-	  justify-content: center;
+	  justify-content: center !important;
 	  section {
-		flex-direction: column ;
+		flex-direction: column !important;
 	  }
 	  div {
-		width: 90%;
-		margin-left: 5%;
-		padding: 0px;
+		width: 90% !important;
+		margin-left: 5% !important;
+		padding: 0px m !important;
 	  }
 	  span {
 		margin-left: 10%;
@@ -64,7 +64,7 @@
   
 	.cards-restau {
 	  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	  width: 100%  ;
+	  width: 100% !important;
 	  height: 100%  ;
 	  margin-top: 0px;
 	  margin-bottom: 0px;
@@ -93,7 +93,7 @@
   
 
   .accueil-restau-card-desktop {
-	flex-direction: column  ;
+	flex-direction: column !important ;
   }
   
 	figcaption i {
@@ -106,7 +106,7 @@
 	footer {
 	  height: 200px;
 	  display: flex;
-	  flex-direction: column;
+	  flex-direction: column !important;
 	   li {
 		margin-bottom: 7px;
 		color: white;
@@ -121,9 +121,9 @@
 	/* ------------- NOUVEAU CSS menufr ------------- */
   
 	.menu-parent {
-	  width: 100%;
-	  margin-left: 0%;
-	  padding: 0 0 50px 0;
+	  width: 100% !important;
+	  margin-left: 0% !important;
+	  padding: 0 0 50px 0 !important;
 	  h2 {
 		text-align: start;
 		padding-left: 20px;
