@@ -24,14 +24,14 @@
 	}
 
 	.accueil-fonctionnement {
-	  justify-content: center !important;
+	  justify-content: center;
 	  section {
-		flex-direction: column !important;
+		flex-direction: column;
 	  }
 	  div {
-		width: 90% !important;
-		margin-left: 5% !important;
-		padding: 0px m !important;
+		width: 90% ;
+		margin-left: 5%;
+		padding: 0px;
 	  }
 	  span {
 		margin-left: 10%;
@@ -44,9 +44,9 @@
 		margin-bottom: 20px;
 	  }
 	  p {
-		width: 30px;
-		height: 30px;
-		top: 15px;
+		width: 20px;
+		height: 20px;
+		top: 13px;
 		left: -15px;
 	  }
   
@@ -104,16 +104,23 @@
 	}
   
 	footer {
-	  height: 200px;
 	  display: flex;
 	  flex-direction: column !important;
 	   li {
 		margin-bottom: 7px;
 		color: white;
+		
 	  }
 	   h1 {
 		font-family: "Shrikhand", cursive;
 		margin-left: 8%;
+	  }
+	  h4 {
+		  margin-left: 0px;
+	  }
+	  ul {
+		  margin-bottom: 0px;
+		  flex-direction: column;
 	  }
 
 	}
