@@ -5,7 +5,9 @@
 	font-family: "Raleway", sans-serif;
   }
   /* Absolute Center Spinner */
-  
+  a {
+	text-decoration: none;                 
+  }
   
   
   .loader {
@@ -247,6 +249,7 @@
 	margin-top: 30px;
 	margin-bottom: 50px;
 	width: 45%;
+	box-shadow:0px 0px 14px 0px rgba(0,0,0,0.71);
 	cursor: pointer;
 	transition: transform 0.5s;
 	figure {
@@ -257,6 +260,7 @@
 	  }
 	  figcaption {
 		padding: 25px;
+		color: #000000;
 		i {
 			position: relative;
             left: 95%;
@@ -285,6 +289,8 @@
   }
   .cards-restau:hover {
 	box-shadow: none;
+	// transform: scale(1.02);
+	
   }
   .cards-restau-last:hover {
 	box-shadow: none;
@@ -319,13 +325,13 @@
 		margin-left: 8%;
 		margin-bottom: 7px;
 		color: white;
-		cursor: pointer;
 		display: flex;
 		flex-direction: row;
 	  }
 	  li {
 		margin-right: 50px;
 		margin-top: 30px;
+		cursor: pointer;
 	  }
 	  div {
 		display: flex;
@@ -405,6 +411,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: bold;
+	cursor: pointer;
   }
   
   figcaption i:hover {
@@ -503,6 +510,9 @@
 		
 		
 		  }  }
+		  .card-plat:hover {
+			  cursor: pointer;
+		  }
   .card-plat:hover .card-plat__check  {
   opacity: 1;
   margin-left: 0px;
@@ -516,7 +526,9 @@
   .card-plat__p {
   width: 95%;
   padding: 15px;
-  
+  }
+  .card-plat__title {
+	  font-weight: 800;
   }
   .card-plat B {
 	margin-top: 25px;
