@@ -11,7 +11,7 @@
   
   
   .loader {
-	animation: hideAnimation 0s ease-in 1.5s;
+	animation: hideAnimation 0s ease-in 2s;
 	animation-fill-mode: forwards;
 	width: 100%;
 	height: 100%;
@@ -25,41 +25,6 @@
 	align-items: center;
 	justify-content: center;
 	
-	// &__circle {
-	// 	height: 50px;
-	// 	width: 50px;
-	// 	border-radius: 50%;
-	// 	display: inline-block;
-	//   }
-	//   &__circle--1 {
-	// 	background-color: #9356DC;
-	// 	position: relative;
-	// 	animation-name: boingAnim;
-	// 	animation-duration: 0.1s;	
-	// 	display: none;
-			
-	//   }
-	//   &__circle--2 {
-	// 	background-color: hsl(288, 100%, 85%);
-	// 	position: relative;
-	// 	animation: example;
-	// 	animation-duration: 1.5s;
-	// 	@keyframes example {
-	// 		0%   {background-color:hsl(288, 100%, 85%); transform:rotate(0deg)
-	// 			translate(-65px)
-	// 			rotate(0deg);}
-	// 		100% {background-color:#a905fc;  transform:rotate(360deg)
-	// 			translate(-65px)
-	// 			rotate(-360deg);}
-	// 	  }
-	//   }
-	//   &__circle--3 {
-	// 	background-color: #99E2D0;
-	// 	position: relative;
-	// 	animation-name: boingAnim;
-	// 	animation-duration: 1.1s;
-	// 	display: none;
-	//   }
 
 	  @keyframes hideAnimation {
 		to {
@@ -446,26 +411,39 @@
 	font-size: 20px;
   }
   .first-div-menu-parent i:hover {
-	webkit-animation: fill 1s ease-out;
-	animation: fill 1s ease-out;
+	animation:heartAnimM  0.5s infinite;
 	background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-	background: -o-linear-gradient(#FF79DA, #9356DC);
-	background: linear-gradient(#FF79DA, #9356DC);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: bold;
 	cursor: pointer;
+	@keyframes heartAnimM {
+		from {
+			font-size:20px;
+		}
+		to {
+			font-size:25px;
+		}
+	  }
   }
   
   figcaption i:hover {
-	webkit-animation: fill 1s ease-out;
-	animation: fill 1s ease-out;
+	
+	// webkit-animation: fill 1s ease-out;
+	animation:heartAnim  0.5s infinite;
 	background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-	background: -o-linear-gradient(#FF79DA, #9356DC);
-	background: linear-gradient(#FF79DA, #9356DC);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: bold;
+	cursor: pointer;
+	@keyframes heartAnim {
+		from {
+			font-size:30px;
+		}
+		to {
+			font-size:35px;
+		}
+	  }
   }
   
   
