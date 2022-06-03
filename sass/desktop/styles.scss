@@ -50,7 +50,7 @@ a {
   }
   .ball1 {
     animation: 0.7s 0s ball-jump infinite ease-in-out;
-    background-color: #9356dc;
+    background-color: $purple_1;
   }
   .ball2 {
     animation: 0.7s 0.2s ball-jump infinite ease-in-out;
@@ -58,7 +58,7 @@ a {
   }
   .ball3 {
     animation: 0.7s 0.4s ball-jump infinite ease-in-out;
-    background-color: #ff79da;
+    background-color: $pink_flash;
   }
 }
 
@@ -82,7 +82,7 @@ header {
 }
 
 .localisation-top {
-  background-color: rgb(231, 231, 231);
+  background-color: $gris-clair;
   padding: 25px;
   font-size: 25px;
   font-weight: 500;
@@ -106,7 +106,7 @@ header {
 }
 
 .accueil-reserve {
-  background-color: rgb(238, 238, 238);
+  background-color: $gris-clair_2;
   display: flex;
   justify-content: start;
   div {
@@ -140,10 +140,10 @@ h2 {
     linear,
     left top,
     left bottom,
-    from(#ff79da),
-    to(#9356dc)
+    from($pink_flash),
+    to($purple_1)
   );
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient($pink_flash, $purple_1);
   box-shadow: 0px 0px 14px -4px rgb(0 0 0 / 78%);
   -webkit-box-shadow: 0px 4px 10px -4px rgb(0 0 0 / 78%);
   -moz-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
@@ -193,7 +193,7 @@ h2 {
     font-size: 20px;
     padding: 30px;
     display: flex;
-    background-color: rgb(238, 238, 238);
+    background-color: $gris-clair_2;
   }
   span {
     margin-left: 15px;
@@ -224,7 +224,7 @@ h2 {
 }
 
 .accueil-restaurants {
-  background-color: rgb(238, 238, 238);
+  background-color: $gris-clair_2;
   padding-left: 5%;
   h2 {
     text-align: left;
@@ -237,7 +237,7 @@ h2 {
       margin-top: 3px;
       content: "";
       width: 35px;
-      background-color: #99e2d0;
+      background-color: $green_pastel;
     }
   }
   img {
@@ -394,7 +394,7 @@ li a {
     margin-top: 3px;
     content: "";
     width: 35px;
-    background-color: #99e2d0;
+    background-color: $green_pastel;
   }
 }
 .first-div-menu-parent {
@@ -419,8 +419,8 @@ li a {
     linear,
     left top,
     left bottom,
-    from(#ff79da),
-    to(#9356dc)
+    from($pink_flash),
+    to($purple_1)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -443,8 +443,8 @@ figcaption i:hover {
     linear,
     left top,
     left bottom,
-    from(#ff79da),
-    to(#9356dc)
+    from($pink_flash),
+    to($purple_1)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -520,7 +520,7 @@ figcaption i:hover {
   &__check {
     width: 0px;
     opacity: 0;
-    background-color: $background-color_7;
+    background-color: $green_pastel;
     border-radius: 0 10px 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -548,7 +548,7 @@ figcaption i:hover {
   padding-bottom: 15px;
   font-size: 18px;
   border-radius: 30px;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient($pink_flash, $purple_1);
   color: white;
   border: none;
   margin-top: 30px;
